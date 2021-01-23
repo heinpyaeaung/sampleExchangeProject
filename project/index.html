@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nightMode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5e506042eb.js" crossorigin="anonymous"></script> 
+    <title>Document</title>
+</head>
+<body id="night-mode">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container" style="position: relative;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="output">
+                            <div class="brand">
+                                <i class="fas fa-history"></i>
+                                <!-- <img src="/bear.svg" alt=""> -->
+                                <h1 class="font-weight-bolder">MMEx</h1>
+                            </div>
+                            <div class="result-container">
+                                <p class="font-weight-bolder display-4" id="result">0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 d-flex justify-content-end mb-3">
+                        <div class="btn-container">
+                            <button id="btn-mode" class=" d-flex justify-content-around align-items-center"><i class="far fa-sun" id="btn-day-mode"></i><i class="far fa-moon" id="btn-night-mode"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="input-group mb-3 d-flex flex-column">
+                            <label for="exchange-amount">Input</label>
+                            <input type="number" autofocus placeholder="0.00" style="border: 1px solid black;text-align: right;" class="form-control no-border w-100" id="exchange-amount" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="dropdown">
+                            <label for="selectBoxOne">From</label>
+                            <div>
+                              <select name="" id="selectBoxOne" class="w-100" style="height: 38px;" required>
+                                <option value="" selected>Select Currency</option>
+                              </select>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="dropdown">
+                            <label for="selectBoxTwo">From</label>
+                            <div>
+                              <select name="" id="selectBoxTwo" class="w-100" style="height: 38px;">
+                                <option value="" selected>Select Currency</option>
+                              </select>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-lg-3 clac-row">
+                        <div class="clac-container">
+                            <button id="calc-btn" type="button" class="btn btn-primary w-100" style="height: 70px;">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="table-container">
+                            <table class="table table-hover" style="border-collapse:unset;">
+                                <thead class="bg-primary">
+                                    <th class="text-light">Date</th>
+                                    <th class="text-light">From</th>
+                                    <th class="text-light">To</th>
+                                    <th class="text-light">Result</th>
+                                </thead>
+                                <tbody class="table-body historyList">
+                            
+                                </tbody>
+                            </table>
+                        <div id="record-history" class="record-history" style="text-align: center;">There is no record</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearHistory" id="clearHistory"><i class="far fa-trash-alt"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous"></script>
+</html>

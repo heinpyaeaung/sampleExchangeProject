@@ -1,0 +1,90 @@
+:root{
+    --dark:#121212;
+    --softdark:#3a3b3c;
+    --text:#e4e6eb;
+}
+body.night-mode{
+    background-color: var(--dark);
+}
+.night-mode .output .brand h1{
+    color:var(--text) !important;
+}
+.night-mode .brand i{
+    color: white;
+}
+.night-mode .output .result-container p{
+    color: var(--text) !important;
+}
+.night-mode .divider{
+    background-color: var(--text) !important;
+}
+.night-mode label{
+    color: var(--text) !important;
+}
+.night-mode .input-group input{
+    background-color: var(--softdark) !important;
+    color: var(--text) !important;
+}
+.night-mode .dropdown select{
+    background-color: var(--softdark) !important;
+    color: var(--text) !important;
+}
+.night-mode .dropdown select option{
+    background-color: var(--softdark) !important;
+    color: var(--text) !important;
+}
+.night-mode table thead th{
+    border: 0 !important;
+}
+.night-mode table tbody tr td {
+    border: 0 !important;
+    color: var(--text) !important;
+}
+.night-mode .record-history{
+    color: var(--text) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:380px){
+    .night-mode .output .result-container p{
+        font-size: 30px !important;
+    }
+}
+@media screen and (max-width:330px){
+    .table td{
+        padding: 0 1px !important;
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text) !important;
+    opacity: 1; /* Firefox */
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--text) !important;
+  }
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text) !important;
+  }

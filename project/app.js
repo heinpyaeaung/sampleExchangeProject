@@ -1,3 +1,4 @@
+
 const data= {
     "info": "Central Bank of Myanmar",
     "description": "Official Website of Central Bank of Myanmar",
@@ -155,3 +156,13 @@ clearHistoryBtn.addEventListener('click', () => {
         recordHistoryTag.classList.add('collapse');
     }
 })();
+
+$(window).on('load',function(){
+    $('.loader-container').fadeOut(500,function(){
+      $(this).remove();
+    })
+ })
+
+//  window.addEventListener('load',function () {
+//      document.getElementById('loader-container').style.animation
+//  })

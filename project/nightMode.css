@@ -44,27 +44,6 @@ body.night-mode{
     color: var(--text) !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:380px){
     .night-mode .output .result-container p{
         font-size: 30px !important;
